@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <style>
+        
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #bdcfbf, #a9cbad);
+    background-size: 400% 400%;
+    animation: degrade 5s ease infinite;
+}
+@keyframes degrade {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+    
+}
+
+
+.container {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <button id="askNameBtn">Clique para inserir seu nome</button>
+    </div>
+    <script>
+        document.getElementById("askNameBtn").addEventListener("click", function() {
+  var name = prompt("Qual é o seu nome?");
+  
+  if (name) {
+    alert("Olá, " + name + "!");
+  }
+});
+
+    </script>
+  </body>
+  </html>
